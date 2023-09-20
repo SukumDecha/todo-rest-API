@@ -1,4 +1,8 @@
-# todo-rest-API
+# todo-using-rest-API
 
-## My first ever project using
-## sprint boost to build the restAPI.
+```json 
+📚 My first-ever sprint-bost project
+
+"this project is show how to use sprintboost"
+"the basic sprintboost"
+```
