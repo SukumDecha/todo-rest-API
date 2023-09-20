@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Calendar</title>
+</head>
+<body>
+<h1>Add Calendar</h1>
+
+<form th:action="@{/addcalendar}" th:object="${calendar}" method="post">
+    <label for="content">Content:</label>
+    <input type="text" id="content" name="name" th:field="*{content}" required>
+    <span th:if="${#fields.hasErrors('content')}" th:errors="*{content}"></span>
+    <br>
+    <button type="submit">Save</button>
+</form>
+
+<a th:href="@{/index}">Back to Calendar List</a>
+</body>
+</html>
